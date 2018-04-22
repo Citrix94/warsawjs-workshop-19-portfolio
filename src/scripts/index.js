@@ -6,16 +6,18 @@ submitFormButton.onclick = function(evt) {
 
     evt.preventDefault();
 
-    //let formValue = document.querySelector("#newsletter input[type='email']").value;
-    let formData = new FormData(getFormValue);
+    let formValue = document.querySelector("#newsletter input[type='email']").value;
+    let formData = new FormData($getFormValue);
     let map = new Map(formData);
 
-    alert(map.value);
+    console.log(formData);
+    console.log(map);
 
 }
 
-function displayMessage () {
+function displayMessage (message) {
 
-    
+  message = map.nodeValue;
+  alert(message);  
 
 }
