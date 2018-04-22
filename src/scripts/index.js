@@ -13,11 +13,19 @@ submitFormButton.onclick = function(evt) {
     console.log(formData);
     console.log(map);
 
-}
-
+    
 function displayMessage (message) {
 
-  message = map;
-  alert(message);  
+    alert(message.nodeValue.submit());  
+  
+  }
+  
+  displayMessage(map);
 
 }
+
+
+// const $form = document.querySelector('form'); // dolar przy zmiennych, które przechowują referencje do DOM
+
+
+
