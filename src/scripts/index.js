@@ -1,4 +1,4 @@
-const getFormValue = document.querySelector('form');
+const $getFormValue = document.querySelector('form');
 
 const submitFormButton = document.querySelector("#newsletter input[type='submit']");
 
