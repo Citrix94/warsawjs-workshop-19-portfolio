@@ -1,23 +1,18 @@
-const $getFormValue = document.querySelector('form');
+const $form = document.querySelector('form'); // dolar przy zmiennych, które przechowują referencje do DOM
 
-const submitFormButton = document.querySelector("#newsletter input[type='submit']");
+$form.addEventListener('submit', function (evt) {
 
-submitFormButton.onclick = function(evt) { 
+    evt.preventDefault(); // wyłączamy domyślną funkcję formularza
 
-    evt.preventDefault();
+    const data = new FormData($form); // uruchamiamy konstruktor, który umożliwi nam pobranie danych z formularza
 
-    let formValue = document.querySelector("#newsletter input[type='email']").value;
-    let formData = new FormData($getFormValue);
-    let map = new Map(formData);
+    const map = new Map(data);// tworzymy zmienną, w któej będziemy mieli mapę parametrów, czyli zbiór gdzie mamy klucz-wartość, klucz-wartość
 
-    console.log(formData);
-    console.log(map);
+    const email = map.get('email');// z mapy możemy wyciagnąć nasz email
 
-}
+    console.log(email);
 
-function displayMessage (message) {
+}); // dodajemy słuchacza zdarzeniowego - oczekuje ona dwóch parametrów - 1 na jaki event, 2 - co uruchomić
 
-  message = map;
-  alert(message);  
 
-}
+
