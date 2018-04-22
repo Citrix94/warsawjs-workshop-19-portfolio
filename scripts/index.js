@@ -4,7 +4,7 @@ function displayMessage(message) { // tworzymy funkcję, do której parametru pr
 
     alert(message);
 
-}
+};
 
 $form.addEventListener('submit', function (evt) {
 
