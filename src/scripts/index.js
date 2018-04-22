@@ -2,7 +2,7 @@ const $form = document.querySelector('form'); // dolar przy zmiennych, które pr
 
 function displayMessage(message) { // tworzymy funkcję, do której parametru przekazujemy argument z funkcji niżej
 
-    alert(message);
+    alert(`Na ten email ${message} został wysłany kup rabatowy`); // template string (stringi szablonowe)
 
 };
 
