@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    border: none;
+}
+
+#page {
+    width: 720px;
+}
+
+#menu {
+    background-color: darkblue;
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 40px;
+        li{
+            width: 200px;
+            height: 70px;
+            background: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0 5px 0 5px;
+            position: relative;
+            bottom: 15px;
+            &:hover {
+                background: darkgray;
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                width: 200px;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+#banner {
+    height: 300px;
+    background-image: url("/images/300.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Denk One', sans-serif;
+    color: #fff;
+    font-size: 2.3em;
+}
+
+#gallery {
+    h1 {
+        font-family: 'Denk One', sans-serif;
+        font-size: 3em;
+        margin: 30px 0 20px 0;
+        text-align: center;
+    }
+    img {
+        margin: 5px 0 5px 0;
+    }
+}
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-size: 3em;
+        font-family: 'Denk One', sans-serif;
+        margin: 20px 0 20px 0;
+    }
+    label {
+        font-size: 2em;
+        font-family: 'Denk One', sans-serif;
+        margin: 0 10px 0 0;
+    }
+    input {
+        position: relative;
+        bottom: 5px;
+    }
+}
+
