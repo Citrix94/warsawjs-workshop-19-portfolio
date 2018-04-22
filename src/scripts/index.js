@@ -17,7 +17,7 @@ submitFormButton.onclick = function(evt) {
 
 function displayMessage (message) {
 
-  message = map.nodeValue;
+  message = map;
   alert(message);  
 
 }

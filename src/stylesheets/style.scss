@@ -101,5 +101,9 @@ fieldset {
         font-family: 'Denk One', sans-serif;
         margin: 0 10px 0 0;
     }
+    input {
+        position: relative;
+        bottom: 5px;
+    }
 }
 
