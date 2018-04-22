@@ -1,31 +1,10 @@
-const $getFormValue = document.querySelector('form');
+const $form = document.querySelector('form'); // dolar przy zmiennych, które przechowują referencje do DOM
 
-const submitFormButton = document.querySelector("#newsletter input[type='submit']");
+$form.addEventListener('submit', function (evt) {
 
-submitFormButton.onclick = function(evt) { 
+   evt.preventDefault(); // wyłączamy domyślną funkcję formularza
 
-    evt.preventDefault();
-
-    let formValue = document.querySelector("#newsletter input[type='email']").value;
-    let formData = new FormData($getFormValue);
-    let map = new Map(formData);
-
-    console.log(formData);
-    console.log(map);
-
-    
-function displayMessage (message) {
-
-    alert(message.nodeValue.submit());  
-  
-  }
-  
-  displayMessage(map);
-
-}
-
-
-// const $form = document.querySelector('form'); // dolar przy zmiennych, które przechowują referencje do DOM
+}); // dodajemy słuchacza zdarzeniowego - oczekuje ona dwóch parametrów - 1 na jaki event, 2 - co uruchomić
 
 
 
